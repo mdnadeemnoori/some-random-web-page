@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+        div {
+            font-family: Arial, sans-serif;
+            background-color: cadetblue;
+            color: white;
+            width: 400px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--VALUE-->
+    <h3>THIS IS VALUE attribute--</h3>
+    <div>
+        <form>
+            <label>username</label>
+            <input type="text" value="nadeem">
+        </form>
+    </div>
+    <!--READONLY-->
+    <h3>THIS IS Readonly attribute--</h3>
+    <div>
+        <form>
+            <label>Candidate Name</label>
+            <input type="text" value="nadeem" readonly>
+        </form>
+    </div>
+    <!--DiSSABLE    **************-->
+    <h3>THIS IS Dissable attribute--</h3>
+    <div>
+        <form>
+            <label>Candidate Name</label>
+            <input type="text" value="nadeem" disabled>
+        </form>
+    </div>
+    <!--------size attribute which increase the size of text area-->
+    <h3>THIS IS Size attribute--</h3>
+    <div>
+        <form>
+            <label>candidate Name</label>
+            <input type="text" size="10">
+        </form>
+    </div>
+    <h3>THIS IS Rows & Column attribute--</h3>
+    <div>
+        <form>
+            <label>Convay Your Message</label>
+            <textarea rows="5" cols="15"></textarea>
+        </form>
+    </div>
+    <!---special attribute which is used in HTML5 attribute-->
+    <h3 style="color: violet;"><em>--:: THIS IS HTML5 Form Attributes ::--</em></h3><br>
+    <!--REQUIRED FORM ATTRIBUTE-->
+    <h3>THIS IS Required/Mendetory Form Attribute</h3>
+    <div>
+        <form>
+            <label>Candidate Name*</label>
+            <input type="text" required>
+            <input type="submit" value="update">
+        </form>
+    </div>
+    <!--no validation for the form attribute-->
+    <h3>THIS IS NO VALIDATION OF Form Attribute(simply add novalidation to form)</h3>
+    <p>IT will not apply HTML5 validation</p>
+    <div>
+        <form novalidate>
+            <label>Enter Email</label>
+            <input type="email">
+            <input type="submit"value="update">
+        </form>
+    </div>
+    <!--Auto focus*******************-->
+    <h3>THIS IS Autofocus Form Attribute.</h3>
+    <p>it will focus the text area automatic.</p>
+    <div>
+        <form>
+            <label>Student Name</label>
+            <input type="text"autofocus>
+            <input type="submit"value="update">
+        </form>
+    </div>
+    <!--Pattern Form Attribute*********-->
+    <h3>THIS IS USED for pattern ^[A-Za-z0-9_]{1,15}$ </h3>
+    <div>
+        <form>
+            <label>Student Password</label>
+            <input type="text" Pattern="^[A-Za-z0-9_]{1,15}$">
+            <input type="submit"value="submit">
+        </form>
+    </div>
+    <!---plceholder form attribute*****************-->
+    <h3>THIS IS Placeholder Form Attribute.</h3>
+    <div>
+        <form>
+            <label>Student</label>
+            <input type="text" placeholder="student name">
+            <input type="submit"value="submit">
+        </form>
+    </div>
+</body>
+
+</html>

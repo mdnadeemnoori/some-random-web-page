@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        table,
+        th,
+        td {
+            font-family: Arial, sans-serif;
+            border: 2px solid green;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        #custom-style {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table width=100%>
+        <thead>
+            <tr>
+                <th>serial number</th>
+                <th>name of condidate</th>
+                <th>Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <!--
+        simple table-->
+    <!-- table column span-->
+    <h2>this is  row span</h2>
+    <table width=100%>
+        <thead>
+            <tr>
+                <th>serial number</th>
+                <th colspan="2">name of condidate</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <!--table col span-->
+    <h2>this is collspan</h2>
+    <table width=100%>
+        <thead>
+            <tr>
+                <th>serial number</th>
+                <th colspan="2">name of condidate</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <!--  custom table with css
+    -->
+    <h2>this is custom table</h2>
+    <table width=100%>
+        <thead id="custom-style">
+            <tr>
+                <th>serial number</th>
+                <th>name of condidate</th>
+                <th>Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>300</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>md nadeem</td>
+                <td>12345235789</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>md nadeem noori</td>
+                <td>123456789</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

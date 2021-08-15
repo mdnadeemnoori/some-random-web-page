@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        div {
+            background-color: blueviolet;
+            font-family: monospace;
+            padding: 10px;
+            width: 500px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        simple Login Form
+        Login Form with Table
+        Select Box
+        Text Area
+        DataList
+    -->
+    <div>
+        <form>
+            <label for="username">User Name</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="send">
+        </form>
+    </div>
+    <!--using tabels login form and there fields-->
+
+    <h2>This login is created using Form and Tabels</h2>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">UserName</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!--Select an option using dropdown-->
+    <h2>this is dropdown option</h2>
+    <div>
+
+        <form>
+            <label>Select a Language</label>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVASCRIPT</option>
+                <option>AJAX</option>
+                <option>JQuery</option>
+            </select>
+
+        </form>
+    </div>
+    <!--Text area and its row and column size defined by users-->
+    <h2>This is text area in which the size is defined by user</h2>
+    <div>
+        <form><label>Enter your Message to our concern person</label>
+            <textarea rows="10" cols="20"></textarea>
+        </form>
+    </div>
+    <!--data list for delecting the element by typing there names-->
+    <h2>this dropdown provides searchin facility</h2>
+    <div>
+        <form>
+            <label>Select a language</label>
+            <input list="tech" name="techo">
+            <datalist id="tech">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JAVASCRIPT">
+                <option value="JQuery">
+                <option value="Angular JS">
+                <option value=".NET">
+                <option value="HTML">
+                <option value="PHP">
+                <option value="Python">
+                <option value="SQL">
+                <option value="Ruby">
+                <option value="AJAX">
+            </datalist>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
